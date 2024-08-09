@@ -1,0 +1,160 @@
+
+
+html, body {
+    margin: 0;
+}
+body {
+    background-color: #f1f1f1;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.wrapper {
+    width: 100%;
+    
+    display: flex;
+    margin: 0;
+    background-color: aquamarine;
+
+}
+.main {
+    display: flex;
+    flex-flow: column;
+    width: 85%;
+}
+/* Estilo do Menu */
+.menu {
+    background-color: rgb(152, 228, 246); /* Cor de fundo do menu */
+    padding: 20px; /* Espaçamento interno do menu */
+}
+
+.menu ul {
+    list-style-type: none; /* Remove os marcadores padrão da lista */
+    padding: 0; /* Remove o padding padrão da lista */
+    margin: 0; /* Remove a margem padrão da lista */
+}
+
+.menu li {
+    margin-bottom: 10px; /* Espaçamento entre os itens do menu */
+}
+
+.menu a {
+    text-decoration: none; /* Remove o sublinhado dos links */
+    color: black; /* Cor do texto dos links */
+    font-size: 16px; /* Tamanho da fonte dos links */
+    display: block; /* Faz com que o link ocupe toda a largura disponível */
+    padding: 10px; /* Espaçamento interno dos links */
+    border-radius: 4px; /* Arredondamento das bordas dos links */
+}
+
+.menu a:hover {
+    background-color: rgb(39, 203, 240); /* Cor de fundo ao passar o mouse */
+    color: white; /* Cor do texto ao passar o mouse */
+}
+
+
+
+.header {
+    background-color: rgb(39, 203, 240);
+    min-height: 150px;
+}
+.content {
+    background-color: white;
+    min-height: 300px;
+    padding: 20px;
+}
+.footer {
+    background-color: rgb(67, 136, 221);
+    min-height: 150px;
+    text-align: center;
+    color: antiquewhite;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+th {
+    background-color: #f2f2f2;
+}
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+tr:hover {
+    background-color: #ddd;
+}
+
+/* Media Queries para Dispositivos Menores */
+@media (max-width: 1024px) {
+    .menu {
+        width: 25%; /* Ajusta a largura do menu para 25% em telas menores */
+        padding: 15px; /* Ajusta o padding do menu */
+    }
+
+    .main {
+        flex-direction: column; /* Alinha o menu e o conteúdo em coluna para telas menores */
+    }
+
+    .content {
+        margin-left: 0; /* Remove o espaçamento à esquerda em telas menores */
+    }
+}
+
+@media (max-width: 768px) {
+    .menu {
+        width: 30%; /* Ajusta a largura do menu para 30% em telas menores */
+        padding: 10px; /* Ajusta o padding do menu */
+    }
+
+    .menu a {
+        font-size: 14px; /* Reduz o tamanho da fonte dos links */
+        padding: 8px; /* Reduz o padding dos links */
+    }
+
+    .header {
+        min-height: 100px; /* Ajusta a altura mínima do header */
+        padding: 15px; /* Ajusta o padding do header */
+    }
+
+    .content {
+        padding: 15px; /* Ajusta o padding da área de conteúdo */
+    }
+
+    .footer {
+        min-height: 100px; /* Ajusta a altura mínima do footer */
+        padding: 15px; /* Ajusta o padding do footer */
+    }
+}
+
+@media (max-width: 480px) {
+    .menu {
+        width: 100%; /* Ajusta a largura do menu para 100% em telas muito pequenas */
+        padding: 5px; /* Ajusta o padding do menu */
+    }
+
+    .menu a {
+        font-size: 12px; /* Reduz o tamanho da fonte dos links */
+        padding: 5px; /* Reduz o padding dos links */
+    }
+
+    .header {
+        min-height: 80px; /* Ajusta a altura mínima do header */
+        padding: 5px; /* Ajusta o padding do header */
+    }
+
+    .content {
+        padding: 5px; /* Ajusta o padding da área de conteúdo */
+    }
+
+    .footer {
+        min-height: 80px; /* Ajusta a altura mínima do footer */
+        padding: 5px; /* Ajusta o padding do footer */
+    }
+}
